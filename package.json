@@ -1,0 +1,23 @@
+{
+  "name": "vapor-sample",
+  "version": "1.0.0",
+  "description": "vapor sample",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kagemiku/vapor-sample.git"
+  },
+  "author": "KAGE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kagemiku/vapor-sample/issues"
+  },
+  "homepage": "https://github.com/kagemiku/vapor-sample#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-vapor": "^1.1.0"
+  }
+}
