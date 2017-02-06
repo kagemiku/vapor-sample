@@ -3,7 +3,7 @@
 var gulp = require('gulp');
 var vapor = require('gulp-vapor');
 
-vapor.config.commands.build = 'swift build';
+vapor.config.commands.build = 'vapor build';
 
 gulp.task('vapor:start', vapor.start);
 gulp.task('vapor:reload', vapor.reload);
