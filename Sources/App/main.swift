@@ -8,6 +8,22 @@ drop.get { req in
     ])
 }
 
+drop.get("hello") { req in
+    guard let name = req.data["name"]?.string else {
+        throw Abort.badRequest
+    }
+    return try JSON(node: [
+        "message": "Hello, \(name)!"
+    ])
+}
+
+drop.post("json") { req in
+    guard let name = req.json?["name"]?.string else {
+        throw Abort.badRequest
+    }
+    return "Hello, \(name)!"
+}
+
 drop.resource("posts", PostController())
 
 drop.run()
